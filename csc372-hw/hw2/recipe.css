@@ -1,0 +1,62 @@
+/* Body Styles */
+body {
+    background-color: white;
+    color: #404040;
+    font-family: Georgia, Garamond, serif;
+    font-size: 11pt;
+    background-image: url('silverware.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Other Headings */
+h2, h3 {
+    font-size: 18pt;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* Links */
+a {
+    color: #A4A400;
+    text-decoration: none;
+}
+
+/* Emphasized text */
+strong {
+    font-weight: bold;
+}
+
+/* Quotation Box */
+blockquote {
+    background-color: #FFFFA8;
+    font-style: italic;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+/* Strikethrough for deleted text */
+del {
+    text-decoration: line-through;
+}
+
+/* Preformatted text for copyright */
+pre {
+    font-family: monospace;
+    white-space: pre;
+}
