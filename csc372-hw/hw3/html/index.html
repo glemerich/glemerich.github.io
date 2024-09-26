@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+  Name: Garrett Emerich
+  Date: 09/25/2024
+  CSC 372-01
+
+  This is the index page for the blog-style website with food recommendations for places near UNCG.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Drink Recommendations</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Your UNCG Off-Campus Food Guide</a></h1>
+        <button><a href="meal-plan.html">Create Your Meal Plan</a></button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>Are you a culinary adventurer in search of the perfect meal on campus? NO!? Well, are you a UNCG student looking for something other than the on-campus dining options that won't break the bank? If so, have we got the places for you. From Latin/Asian fusion, to a NY Style deli, and a breakfast restraunt with the most delicious mexican lunch in Greensboro. All three within walking distance of campus featuring some of the most delicious food you can imagine, all for a reasonable price. </p>
+        </section>
+
+        <section id="food-recommendations">
+            <h2>Our Top Recommendations</h2>
+
+            <!-- Food Location 1 -->
+            <article>
+                <h3>Bandito Bodega</h3>
+                <p>1609 W Friendly Ave, Greensboro, NC 27403-1208</p>
+                <p>A unique Latin/Asian fusion restaurant located only .5 miles from UNCG, known for their "Big Ass Burrito" as well as dishes such as Quesadillas, Tacos, and Specialty Rice.</p>
+                <p>Open 7 Days A Week 11:30AM - 9:30PM</p>
+                <div class="flex-container">
+                    <div class="dish" data-dish="1">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-media0.fl.yelpcdn.com%2Fbphoto%2Fc8ut1E9Oa7w5WoMbKA6jmA%2F348s.jpg" alt="Guacamole and Chips" class="small-image">
+                    </div>
+                    <div class="dish" data-dish="2">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-media0.fl.yelpcdn.com%2Fbphoto%2F4JvsdrCHj7beeHKYjjqPDg%2F348s.jpg" alt="Burrito Bowl" class="small-image">
+                    </div>
+                    <div class="dish" data-dish="3">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-media0.fl.yelpcdn.com%2Fbphoto%2Fxf9zF51RVGL1bAxR4yLAMQ%2F348s.jpg" alt="Pimento Burrito" class="small-image">
+                    </div>
+                </div>
+                <!-- Dish Descriptions -->
+                <div data-description="1" class="dish-description" style="display:none;">
+                    <h4>Guacamole & Chips</h4>
+                    <p>$10 - 8oz portion of delicous homemade guacamole and a bag of homemade tortilla chips. This snack will easily feed everyone in your dorm.</p>
+                </div>
+                <div data-description="2" class="dish-description" style="display:none;">
+                    <h4>Big Ass Burrito Bowl</h4>
+                    <p>$14.50 - [Choose: Chicken / Pork / Chorizo / Tofu / Steak (+$2) / Shrimp (+$2) / Tuna (+$4)] plus Spanish Rice, Black Beans, Pico De Gallo, Black Bean & Corn Salsa, Radish, Red Cabbage, Cilantro, Chipotle Crema, Tomatillo Verde. Customizable to your liking, this is a delicious way to feel like you're still eating something healthy!</p>
+                </div>
+                <div data-description="3" class="dish-description" style="display:none;">
+                    <h4>Southwest Pimento Burrito</h4>
+                    <p>$12.50 - [Choose: Chicken / Pork / Chorizo / Tofu / Steak (+$2) / Shrimp (+$2) / Tuna (+$4)] Spanish Rice, Black Beans, House Spicy Pimento, Fresh Guacamole, Salsa Verde, Black Bean & Corn, Red Cabbage, Cilantro, Jalapeno, Chipotle Crema. This burrito is the perfect combination of Tex-Mex and southern pimento cheese, not to mention it's enough food for two meals! </p>
+                </div>
+            </article>
+
+            <!-- Food Location 2 -->
+            <article>
+                <h3>First Carolina Deli</h3>
+                <p>1635 Spring Garden St Greensboro, NC 27403</p>
+                <p>An authentic NY Style deli located less than a mile from UNCG, stop in for a delicious sandwich, soup, burger, or salad.</p>
+                <p>Open Monday-Saturday 10AM - 9PM</p>
+                <div class="flex-container">
+                    <div class="dish" data-dish="4">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-media0.fl.yelpcdn.com%2Fbphoto%2FAaESkmU_J4FBhWLSHcegmQ%2F348s.jpg" alt="" class="small-image">
+                    </div>
+                    <div class="dish" data-dish="5">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/RQKJDp856KqbXwcmAe3qxA/o.jpg" alt="" class="small-image">
+                    </div>
+                    <div class="dish" data-dish="6">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/CcOkKDBUahIznsEr_8y9zg/o.jpg" alt="" class="small-image">
+                    </div>
+                </div>
+                <!-- Dish Descriptions -->
+                <div data-description="4" class="dish-description" style="display:none;">
+                    <h4>Arlington</h4>
+                    <p>$11.25 - Fresh, shaven Boar's Head turkey topped with melty Muenster cheese, topped with crisp lettuce, sliced tomato & creamy mayonnaise, on an onion roll. This is a can't miss sandwich!</p>
+                </div>
+                <div data-description="5" class="dish-description" style="display:none;">
+                    <h4>Rachel</h4>
+                    <p>$11.25 - Pastrami, Sauerkraut, Swiss, hot on rye with Russian dressing. A new take on an old classic, done to perfection.</p>
+                </div>
+                <div data-description="6" class="dish-description" style="display:none;">
+                    <h4>Italian Sub</h4>
+                    <p>$11.25 - Genoa salami, cappicola, imported ham, provolone, sliced cherry peppers, lettuce, tomato, onion, special dressing on a sub roll. Who doesn't like an italian sub? This is certainly my favorite.</p>
+                     </div>
+            </article>
+
+            <!-- Food Location 3 -->
+            <article>
+                <h3>Bagner and Alexa's Breakfast & Lunch</h3>
+                <p>1618 Spring Garden St Greensboro, NC 27403</p>
+                <p>Located just off UNCG's campus, this restraunt boasts an impressive menu featuring everything from classic breakfast meals to delicious Mexican dishes.</p>
+                <p>Open 7 Days A Week 7AM - 3PM</p>
+                <div class="flex-container">
+                    <div class="dish" data-dish="7">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/kmnEcY5WB0QICc4d2AsnjA/o.jpg" alt="" class="small-image">
+                    </div>
+                    <div class="dish" data-dish="8">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/Um9BNuK7SXFP4bOjXNa5gg/o.jpg" alt="" class="small-image">
+                    </div>
+                    <div class="dish" data-dish="9">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/iMdLQ64nowUOXr6r38XVkg/o.jpg" alt="" class="small-image">
+                    </div>
+                </div>
+                <!-- Dish Descriptions -->
+                <div data-description="7" class="dish-description" style="display:none;">
+                    <h4>Spartan Special</h4>
+                    <p>$5.75 - 2 eggs, 1 side, choice of bacon, sausage link, or sausage patty. Served w/ toast. An affordable and delicious breakfast, even better with some homemade hot sauce.</p>
+                </div>
+                <div data-description="8" class="dish-description" style="display:none;">
+                    <h4>Huevos con Chorizo</h4>
+                    <p>$8.50 - Chorizo, scrambled eggs. Served w/ rice, beans, and corn tortillas. A delicious take on scrambled eggs that will leave you wanting more.</p>
+                </div>
+                <div data-description="9" class="dish-description" style="display:none;">
+                    <h4>Torta Cubana</h4>
+                    <p>$12.95 - Torta bread, stuffed with beans, carne asada, mozzarella, chorizo, salchica, ham, 1 egg, provolone cheese, crema, avocado, jalapeno, onions, tomatoes, and lettuce. A sandwich that rivals that of the deli above, with a mexican twist! A delcious, and filling, lunch.</p>
+                     </div>
+            </article>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>&copy; 2024 Campus Food Blog</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

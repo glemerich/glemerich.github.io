@@ -1,0 +1,202 @@
+/*
+Name: Garrett Emerich
+  Date: 09/25/2024
+  CSC 372-01
+
+This is the styling for all pages
+*/
+
+/* General styles */
+body {
+    font-family: 'Georgia', 'Garamond', serif;
+    background-color: #f9f9f9;
+    color: #404040;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #003366; /* UNCG Navy */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #FFC72C; /* UNCG Gold */
+}
+
+header button {
+    background-color: #FFC72C; 
+    border: none;
+    color: #003366;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header button:hover {
+    background-color: #9999; 
+    color: white;
+    transform: scale(1.05); 
+}
+
+header button a {
+    text-decoration: none;
+    color: inherit; 
+    font-weight: bold;
+}
+
+header button a:hover {
+    color: inherit; 
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit; /* Inherit the color from the parent element (h1) */
+}
+
+h1 a:hover {
+    color: #FFC72C; /* Optional hover effect: change color to UNCG Gold */
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #003366; 
+    border-bottom: 2px solid #FFC72C;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Flexbox for food recs */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.dish {
+    text-align: center;
+    cursor: pointer;
+    flex-basis: 30%;
+}
+
+.small-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.large-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+
+.small-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Dish description box */
+.dish-description {
+    display: none;  
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #FFF3C4;
+    border: 1px solid #E0C089;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dish-description h4 {
+    margin-top: 0;
+    color: #003366; 
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #003366; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 4px solid #FFC72C; 
+}
+
+footer p {
+    margin: 0;
+}
+
+.meal-plan-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.dish-list, .meal-plan {
+    width: 45%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #FFC72C;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366;
+    color: white;
+}
+
+
+/* responsive design for food recs*/
+@media (max-width: 300px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish {
+        flex-basis: 100%;
+    }
+
+    .small-image, .large-image {
+        width: 100px;
+        height: 100px;
+    }
+}

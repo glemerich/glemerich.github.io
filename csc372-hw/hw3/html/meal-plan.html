@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+  Name: Garrett Emerich
+  Date: 09/25/2024
+  CSC 372-01
+
+  This is the meal planning page to allow users to gauge combined cost for items.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Meal Plan</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create Your Meal Plan</h1>
+        <button><a href="index.html">Back To Food Guide</a></button>
+    </header>
+
+    <main>
+        <section class="meal-plan-container">
+            <div class="dish-list">
+                <h2>Recommended Dishes</h2>
+                <ul id="dish-list">
+                    <!-- Bandito Bodega -->
+                    <li data-dish="Guacamole & Chips" data-price="10">
+                        Guacamole & Chips - $10 
+                        <button class="add-button">Add</button>
+                    </li>
+                    <li data-dish="Big Ass Burrito Bowl" data-price="14.50">
+                        Big Ass Burrito Bowl - $14.50
+                        <button class="add-button">Add</button>
+                    </li>
+                    <li data-dish="Southwest Pimento Burrito" data-price="12.50">
+                        Southwest Pimento Burrito - $12.50
+                        <button class="add-button">Add</button>
+                    </li>
+
+                    <!-- First Carolina Deli  -->
+                    <li data-dish="Arlington" data-price="11.25">
+                        Arlington - $11.25
+                        <button class="add-button">Add</button>
+                    </li>
+                    <li data-dish="Rachel" data-price="11.25">
+                        Rachel - $11.25
+                        <button class="add-button">Add</button>
+                    </li>
+                    <li data-dish="Italian Sub" data-price="11.25">
+                        Italian Sub - $11.25
+                        <button class="add-button">Add</button>
+                    </li>
+
+                    <!-- Bagner and Alexa's -->
+                    <li data-dish="Spartan Special" data-price="5.75">
+                        Spartan Special - $5.75
+                        <button class="add-button">Add</button>
+                    </li>
+                    <li data-dish="Huevos con Chorizo" data-price="8.50">
+                        Huevos con Chorizo - $8.50
+                        <button class="add-button">Add</button>
+                    </li>
+                    <li data-dish="Torta Cubana" data-price="12.95">
+                        Torta Cubana - $12.95
+                        <button class="add-button">Add</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="meal-plan">
+                <h2>Your Meal Plan</h2>
+                <ul id="meal-plan-list">
+                    
+                </ul>
+                <p>Total: $<span id="total-amount">0.00</span></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/meal-plan.js"></script>
+</body>
+</html>
