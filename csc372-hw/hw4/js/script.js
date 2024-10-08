@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Shuffle images and determine computer move
     function startComputerTurn(playerMove) {
-        let computerChoices = ['rock.png', 'paper.png', 'scissors.png'];
+        let computerChoices = ['rock.PNG', 'paper.PNG', 'scissors.PNG'];
         let index = 0;
 
         if (computerShuffleInterval) {
@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             clearInterval(computerShuffleInterval);
             let randomChoiceIndex = Math.floor(Math.random() * computerChoices.length);
-            let computerMove = computerChoices[randomChoiceIndex].split('.')[0]; // Extracts "rock", "paper", or "scissors"
+            let computerMove = computerChoices[randomChoiceIndex].split('.')[0];
             computerChoiceImg.src = `../images/${computerChoices[randomChoiceIndex]}`;
-            determineWinner(playerMove, computerMove); // Determine who won the game
+            determineWinner(playerMove, computerMove); 
         }, 3000);
     }
 
