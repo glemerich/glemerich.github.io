@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ties = 0;
         updateScore();
         resultText.textContent = 'Make your move!';
-        computerChoiceImg.src = 'images/question-mark.png';
+        computerChoiceImg.src = 'images/question-mark.PNG';
         playerMoves.forEach(move => move.classList.remove('selected'));
     });
 });
