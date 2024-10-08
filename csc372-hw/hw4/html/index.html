@@ -1,0 +1,62 @@
+<!--
+  Name: Garrett Emerich
+  Date: 10/08/24
+  CSC 372-01
+
+  This is the index page for the rock paper scissors game.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors Game</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <h1>Rock-Paper-Scissors</h1>
+</head>
+<body>
+   
+    
+    <div id="game">
+        <!-- Player throw section -->
+        <section id="player-throw">
+            <h2>Your Move</h2>
+            <figure id="rock" class="move">
+                <img src="../images/rock.png" alt="Rock">
+            </figure>
+            <figure id="paper" class="move">
+                <img src="../images/paper.png" alt="Paper">
+            </figure>
+            <figure id="scissors" class="move">
+                <img src="../images/scissors.png" alt="Scissors">
+            </figure>
+        </section>
+
+        <!-- Computer throw section -->
+        <section id="computer-throw">
+            <h2>Computer's Move</h2>
+            <figure>
+                <img id="computer-choice" src="../images/question-mark.PNG" alt="Question mark">
+            </figure>
+        </section>
+
+        <!-- Outcome section -->
+        <section id="outcome">
+            <h2>Outcome</h2>
+            <p id="result">Make your move!</p>
+        </section>
+
+        <!-- Score and reset -->
+        <section id="score">
+            <h2>Score</h2>
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+            <p>Ties: <span id="ties">0</span></p>
+            <button id="reset-btn">Reset Game</button>
+        </section>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
